@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Chilanka', cursive;
+}
+body{
+    background-color: #fff3e6;
+}
+#main-container{
+    display: flex;
+    height: 230px;
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 850px;
+}
+#heading{
+    font-size: 44px;
+    font-weight: 600;
+    font-family: cursive;
+    text-align: center;
+    padding-top: 50px;
+    color: #18508b;
+}
+/*left-card designing*/
+#left-div{
+    background-color: #c1a1d3;
+    height: 230px;
+    width: 400px;
+    text-align: center;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+#right-div{
+    background-color: #0d335d;
+    height: 230px;
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+}
+/* Skin Conatiner*/
+#skin-container{
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 28px;
+}
+#skin-card img{
+    height: 75px;
+    width: 75px;
+}
+#skin-card img:nth-child(2){
+    padding: 0px 15px;
+}
+#skin-card img:hover{
+    cursor: pointer;
+}
+#skin-card h1,#eye-card h1,#mouth-card h1{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#skin-card{
+    display: block;
+}
+#right-pointer-skin{
+    font-size: 40px;
+    position: relative;
+    right: -25px;
+    top: -25px;
+    cursor: pointer;
+}
+/*Eye Container*/
+#eye-card{
+    display: none;
+}
+#eye-card h1,#mouth-card h1{
+    padding-top: 0;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+#eye-container,#mouth-container{
+    position: relative;
+    top: -30px;
+}
+#eye-container-1,#eye-container-2{
+    display: flex;
+    padding-left: 80px;
+}
+#eye-container-1 img,#eye-container-2 img{
+    height: 75px;
+    width: 75px;
+    cursor: pointer;
+}
+#right-pointer-eye{
+    font-size: 40px;
+    position: relative;
+    left: 175px;
+    top: -160px;
+    cursor: pointer;
+}
+.left-pointer{
+    font-size: 40px;
+    position: relative;
+    top: 100px;
+    left: -170px;
+    cursor: pointer;
+    z-index: 3;
+}
+/*Mouth Container*/
+#mouth-container-1 img,#mouth-container-2 img{
+    height: 75px;
+    width: 75px;
+    cursor: pointer;
+}
+#mouth-container-1,#mouth-container-2{
+    display: flex;
+    padding-left: 90px;
+}
+#mouth-container-2{
+    padding-left: 130px;
+}
+#mouth-card{
+    display: none;
+}
+/* End Left Card Designing */
+
+
+/* Right Card Designing*/
+#skin{
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    padding-top: 40px;
+    display: none;
+}
+#right-yellow,#right-red,#right-green{
+    padding-top: 40px;
+    z-index: 1;
+    display: none;
+}
+#mouth,#eyes{
+    height: 130px;
+    width: 130px;
+}
+#mouth{
+    position: relative;
+    z-index: 2;
+    top: -110px;
+    display: none;
+}
+#eyes{
+    position: relative;
+    z-index: 3;
+    display: none;
+}
+#eye-face{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 150px;
+    width: 140px;
+    margin: 0 auto;
+    top: -160px;
+    left: 5px;
+}
+@media screen and (max-width: 900px){
+    #heading{
+        font-size: 54px;
+        width: 100vw;
+        text-align: center;
+    }
+    #main-container{
+        flex-direction: column;
+    }
+    #left-div,#right-div{
+        width: 95%;
+        margin: 0 auto;
+        padding-bottom: 25px;
+    }
+    #left-div{
+        margin-bottom: 30px;
+    }
+    #skin-card{
+        height: 600px;
+    }
+    #eye-container,#mouth-container{
+        margin: 0 auto;
+        width: 400px;
+    }
+    .left-pointer{
+        left: -320px;
+    }
+    #right-pointer-eye{
+        left: 300px;
+    }
+    #right-pointer-skin{
+        right: -200px;
+    }
+}

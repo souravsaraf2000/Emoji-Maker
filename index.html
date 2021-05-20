@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Maker</title>
+    <link rel="stylesheet" href="emoji.css">
+    <script src="https://kit.fontawesome.com/da6c45d410.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="heading">Emoji Maker</h1>
+    <div id="main-container">
+        <div id="left-div">
+            <div id="skin-card">
+                <h1>Select Skin Colour</h1>
+                <div id="skin-container">
+                    <img src="images/skin/yellow.png" alt="yellow-skin" id="yellow" class="skin-left">
+                    <img src="images/skin/red.png" alt="red-skin" id="red" class="skin-left">
+                    <img src="images/skin/green.png" alt="green-skin" id="green" class="skin-left">
+                    <i class="fas fa-chevron-right" id="right-pointer-skin">
+                    </i>
+                </div>
+            </div>
+            <div id="eye-card">
+                <i class="fas fa-chevron-left left-pointer">
+                </i>
+                <h1>Select Eyes</h1>
+                <div id="eye-container">
+                    <div id="eye-container-1">
+                        <img src="images/eyes/closed.png" alt="closed-eyes" id="closed" class="eye-left">
+                        <img src="images/eyes/laughing.png" alt="laughing-eyes" id="laughing" class="eye-left">
+                        <img src="images/eyes/long.png" alt="long-eyes" id="long" class="eye-left">
+                    </div>
+                    <div id="eye-container-2">
+                        <img src="images/eyes/normal.png" alt="normal-eyes" id="normal" class="eye-left">
+                        <img src="images/eyes/rolling.png" alt="rolling-eyes" id="rolling" class="eye-left">
+                        <img src="images/eyes/winking.png" alt="winking-eyes" id="winking" class="eye-left">
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right" id="right-pointer-eye">
+                </i>
+            </div>
+            <div id="mouth-card">
+                <i class="fas fa-chevron-left left-pointer">
+                </i>
+                <h1>Select Mouth</h1>
+                <div id="mouth-container">
+                    <div id="mouth-container-1">
+                        <img src="images/mouth/open.png" alt="open-mouth" id="open" class="mouth-left">
+                        <img src="images/mouth/sad.png" alt="sad-mouth" id="sad" class="mouth-left">
+                        <img src="images/mouth/smiling.png" alt="smiling-mouth" id="smiling" class="mouth-left">
+                    </div>
+                    <div id="mouth-container-2">
+                        <img src="images/mouth/straight.png" alt="straight-mouth" id="straight" class="mouth-left">
+                        <img src="images/mouth/teeth.png" alt="teeth-mouth" id="teeth" class="mouth-left">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="right-div">
+            <img id="skin">
+            <div id="eye-face">
+                <img alt="" id="eyes">
+                <img alt="" id="mouth">
+            </div>
+        </div>
+    </div>
+    <script src="emoji-script.js" type="text/javascript"></script>
+</body>
+</html>
